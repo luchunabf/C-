@@ -48,7 +48,7 @@ int main()//////////////////////////////////////段错误
 		string::iterator it1 = s1.begin();
 		while (it1 != s1.end())
 		{
-			string::iterator it2 = s2.begin();
+			string::iterator it2 = s2.begin();//string根本不需要迭代器，使用下标即可
 			while (it2 != s2.end())
 			{
 				if ((*it1) == (*it2))
