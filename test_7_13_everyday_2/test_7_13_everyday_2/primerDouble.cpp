@@ -44,8 +44,11 @@ int main()
 					minX = k;
 			}
 		}
-		cout << (m - minX) / 2 << endl;
-		cout << (m - minX) / 2 + minX << endl;
+		int MinPrime = (m - minX) / 2;
+		int MaxPrime = (m - minX) / 2 + minX;
+
+		cout << MinPrime << endl;
+		cout << MaxPrime << endl;
 	}
 	return 0;
 }
