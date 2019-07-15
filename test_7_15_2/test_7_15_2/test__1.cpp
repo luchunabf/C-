@@ -14,9 +14,6 @@ int main()
 	if (Isequal(p1, p2))
 		cout << p1 << endl;
 	else
-	{
 		cout << p2 << endl;
-
-	}
 	return 0;
 }
