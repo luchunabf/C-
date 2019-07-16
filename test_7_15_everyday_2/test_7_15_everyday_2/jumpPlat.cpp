@@ -2,7 +2,7 @@
 #include<iostream>
 #include<vector>
 #include<math.h>
-//不会
+//不会，此题属于经典算法问题，需要回看
 using namespace std;
 void calYueshu(int n, vector<int> &yueshu);
 
