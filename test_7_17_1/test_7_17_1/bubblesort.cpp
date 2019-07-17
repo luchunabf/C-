@@ -3,6 +3,7 @@
 using namespace std;
 #include <vector>
 
+//任意类型数据的冒泡排序
 template<class T>
 void mySwap(T* a, T* b)
 {
@@ -15,7 +16,7 @@ template<class T>
 void BubbleSort(vector<T>& v)
 {
 	int len = v.size();
-	for (int i = 0; i < len - 1; ++i)
+	for (int i = 0; i < len - 1; ++i)//注意冒泡的趟数是size-1：即[0 , size-1),左闭右开
 	{
 		int Flag = 0;
 		for (int j = 0; j < len - i - 1; j++)
@@ -32,9 +33,9 @@ void BubbleSort(vector<T>& v)
 }
 int main()
 {
-	int a = 1, b = 2;
-	mySwap(&a, &b);
-	cout << a << b << endl;
+	//int a = 1, b = 2;
+	//mySwap(&a, &b);
+	//cout << a << b << endl;
 	vector<int> v1{ 5, 2, 9, 3, 4, 8, 6, 0, 7, 1 };
 	BubbleSort(v1);
 	for (auto e : v1)
