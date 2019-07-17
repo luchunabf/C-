@@ -12,7 +12,7 @@ void mySwap(T* a, T* b)
 }
 
 template<class T>
-void BubbleSort(vector<T> v)
+void BubbleSort(vector<T>& v)
 {
 	int len = v.size();
 	for (int i = 0; i < len - 1; ++i)
