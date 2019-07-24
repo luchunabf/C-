@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-bool grepStr(const char* s1, const char* s2)
+bool grepStr(const char* s1, const char* s2)////////////////////////这里传的是char*
 {
 	if (*s1 == '\0' && *s2 == '\0')
 		return true;
@@ -23,7 +23,7 @@ int main()
 	string s1, s2;
 	while (cin >> s1 >> s2)
 	{
-		if (grepStr(s1.c_str(), s2.c_str()))
+		if (grepStr(s1.c_str(), s2.c_str()))//////////////////这里为何不需要传地址呢？？？？
 			cout << "true" << endl;
 		else
 			cout << "false" << endl;
